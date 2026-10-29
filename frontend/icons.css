@@ -1,0 +1,7 @@
+/* Icones SVG modernos, independentes de fontes/CDN. */
+.icone-svg { width:1.2em; height:1.2em; display:inline-block; vertical-align:-.18em; flex-shrink:0; color:inherit; }
+.icone-principal .icone-svg, .icone-acesso .icone-svg, .icone-opcao .icone-svg, .icone-marca .icone-svg, .perfil-icone .icone-svg { width:1em; height:1em; }
+.menu .icone-svg { width:1em; height:1em; }
+.seta-acesso .icone-svg, .seta-opcao .icone-svg { width:.9em; height:.9em; }
+.opcoes-admin .icone-svg { width:2em; height:2em; }
+aside li a .icone-svg { margin-right:7px; }

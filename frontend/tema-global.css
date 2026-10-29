@@ -1,0 +1,50 @@
+/* Tema unificado SENAI: fonte unica de cores para todas as paginas. */
+:root, html[data-tema="claro"] {
+  color-scheme: light;
+  --fundo: #f5f6fa; --card: #fff; --fundo-card: #fff;
+  --texto: #222; --texto-secundario: #666; --borda: #ddd;
+  --sombra: 0 18px 40px rgba(0,0,0,.15);
+}
+html[data-tema="escuro"] {
+  color-scheme: dark;
+  --fundo: #181818; --card: #242424; --fundo-card: #242424;
+  --texto: #f5f5f5; --texto-secundario: #bdbdbd; --borda: #555;
+  --sombra: 0 18px 40px rgba(0,0,0,.4);
+}
+html[data-tema="claro"] body {
+  --fundo:#f5f6fa; --card:#fff; --fundo-card:#fff;
+  --texto:#222; --texto-secundario:#666; --borda:#ddd;
+  background-color: #f5f6fa !important; color: #222;
+}
+html[data-tema="escuro"] body {
+  --fundo:#181818; --card:#242424; --fundo-card:#242424;
+  --texto:#f5f5f5; --texto-secundario:#bdbdbd; --borda:#555;
+  background-color: #181818 !important; color: #f5f5f5;
+}
+html[data-tema="claro"] body :is(.card, .card-escolha, .card-login, .config-card, .opcao-secretaria, .menu-configuracoes, .mensagem, aside) {
+  background-color: #fff !important; color: #222;
+}
+html[data-tema="escuro"] body :is(.card, .card-escolha, .card-login, .config-card, .opcao-secretaria, .menu-configuracoes, .mensagem, aside) {
+  background-color: #242424 !important; color: #f5f5f5;
+}
+html[data-tema="claro"] body :is(.opcao-acesso, .campo-login, .botao-google) {
+  background-color: #fff !important; color: #222;
+}
+html[data-tema="escuro"] body :is(.opcao-acesso, .campo-login, .botao-google) {
+  background-color: #202020 !important; color: #f5f5f5;
+}
+html[data-tema="claro"] body :is(.card-escolha h1, .texto-acesso h2, .cabecalho-secretaria h1, .titulo-grupo, .conteudo-opcao h3, .perfil-topo h2, .campo label, .item-configuracao, .card h2, main h1, main h2, main h3, main p, aside li, aside a) { color:#222; }
+html[data-tema="escuro"] body :is(.card-escolha h1, .texto-acesso h2, .cabecalho-secretaria h1, .titulo-grupo, .conteudo-opcao h3, .perfil-topo h2, .campo label, .item-configuracao, .card h2, main h1, main h2, main h3, main p, aside li, aside a) { color:#f5f5f5; }
+html[data-tema="claro"] body :is(.subtitulo-escolha, .texto-acesso p, .cabecalho-secretaria p, .conteudo-opcao p, .perfil-topo p) {color:#666;}
+html[data-tema="escuro"] body :is(.subtitulo-escolha, .texto-acesso p, .cabecalho-secretaria p, .conteudo-opcao p, .perfil-topo p) {color:#bdbdbd;}
+html[data-tema="claro"] body .campo input {background:#fff;color:#222;border-color:#aaa;}
+html[data-tema="escuro"] body .campo input {background:#1c1c1c;color:#fff;border-color:#555;}
+html[data-tema="claro"] body .campo input[readonly] {background:#ededed;color:#666;}
+html[data-tema="escuro"] body .campo input[readonly] {background:#333;color:#aaa;}
+html[data-tema="claro"] body .linha-menu-configuracoes {background:#ddd;}
+html[data-tema="escuro"] body .linha-menu-configuracoes {background:#3d3d3d;}
+/* Cores de marca sempre vermelhas e brancas. */
+header,.topo-login,.topo-escolha {color:#fff;}
+#tema {width:45px;height:45px;min-width:45px;flex:0 0 45px;border:0;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;padding:0;overflow:hidden;cursor:pointer;}
+#tema img,#icone-tema {width:25px !important;height:25px !important;max-width:25px !important;max-height:25px !important;object-fit:contain;display:block;}
+.tema-flutuante {position:fixed;top:12px;right:18px;z-index:2000;box-shadow:0 2px 8px #0003;}

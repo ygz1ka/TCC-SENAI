@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Secretaria Virtual SENAI | Login</title>
+
+    <link rel="stylesheet" href="style-login.css">
+    <link rel="stylesheet" href="../tema-global.css?v=32">
+<script>
+    (function(){var t='claro';try{t=localStorage.getItem('tema')==='escuro'?'escuro':'claro'}catch(e){}document.documentElement.dataset.tema=t;document.documentElement.classList.toggle('dark',t==='escuro');})();
+    </script>
+<link rel="stylesheet" href="../icons.css">
+</head>
+
+<body data-tipo-login="aluno">
+
+    <header class="topo-login">
+
+        <div class="marca-login">
+
+            <div class="icone-marca">
+                <svg class="icone-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 21v-5h6v5M8 7h2M14 7h2M8 11h2M14 11h2"/></svg>
+            </div>
+
+            <h1>
+                Secretaria Virtual SENAI
+            </h1>
+
+        </div>
+
+        <button id="tema" aria-label="Alterar tema">
+        <img id="icone-tema" src="../imagens/moon.png" alt="Trocar tema">
+        </button>
+
+    </header>
+
+    <main class="pagina-login">
+
+        <section class="card-login">
+
+            <div class="icone-principal">
+               <svg class="icone-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 10 10-6 10 6-10 6zM6 13v5c3 3 9 3 12 0v-5M22 10v6"/></svg>
+            </div>
+
+            <div class="cabecalho-login">
+
+                <h2>Bem-vindo!</h2>
+
+                <p>
+                    Acesse sua conta de aluno para continuar
+                </p>
+
+            </div>
+
+            <div class="linha-login"></div>
+
+            <form id="form-login">
+
+                <div class="grupo-campo">
+
+                    <label for="usuario">
+                        Username
+                    </label>
+
+                    <div class="campo-login">
+
+                        <span class="icone-campo">
+                            <svg class="icone-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg>
+                        </span>
+
+                        <input
+                            type="text"
+                            id="usuario"
+                            name="usuario"
+                            placeholder="Digite seu username"
+                            autocomplete="username"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="grupo-campo">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <div class="campo-login">
+
+                        <span class="icone-campo">
+                            <svg class="icone-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="12" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+                        </span>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="mostrar-senha"
+                            class="mostrar-senha"
+                            aria-label="Mostrar senha"
+                        >
+                            <svg class="icone-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="opcoes-login">
+
+                    <label class="lembrar-login">
+
+                        <input
+                            type="checkbox"
+                            id="lembrar"
+                        >
+
+                        <span>Lembrar-me</span>
+
+                    </label>
+
+                    <a href="#" class="esqueci-senha" onclick="alert('Recuperação de senha não implementada neste protótipo.');return false;">
+                        Esqueci minha senha
+                    </a>
+
+                </div>
+
+                <button type="submit" class="botao-entrar">
+                    Entrar
+                </button>
+
+                <div class="separador-login">
+
+                    <span></span>
+
+                    <p>ou acesse com</p>
+
+                    <span></span>
+
+                </div>
+
+                <button type="button" class="botao-google" disabled title="Google não configurado neste protótipo">
+
+                    <span class="google-g">
+                        G
+                    </span>
+
+                    Entrar com Google
+
+                </button>
+
+                <p class="cadastro-login">
+
+                    Não tem uma conta?
+
+                    <a href="cadastro.html?tipo=aluno">
+                        Cadastre-se
+                    </a>
+
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="login.js"></script>
+
+    <script src="../tema.js?v=32"></script>
+</body>
+
+</html>

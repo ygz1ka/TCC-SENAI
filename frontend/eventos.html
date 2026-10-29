@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tema-global.css?v=32">
+<script>
+    (function(){var t='claro';try{t=localStorage.getItem('tema')==='escuro'?'escuro':'claro'}catch(e){}document.documentElement.dataset.tema=t;document.documentElement.classList.toggle('dark',t==='escuro');})();
+    </script>
+<link rel="stylesheet" href="icons.css">
+</head>
+<body>
+    <header><div class="menu"><svg class="icone-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></div><div class="logo">Eventos</div><button id="tema"><img id="icone-tema" src="imagens/moon.png" alt="Trocar tema"></button></header>
+<aside><h2>Menu</h2><ul><li><a href="paginainicio.html"><svg class="icone-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg> Página Inicial</a></li><li><a href="secretaria.html"><svg class="icone-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V8l9-5 9 5v13M9 21v-7h6v7M3 10h18M7 13h.01M17 13h.01"/></svg> Secretaria</a></li></ul></aside>
+<main><section class="card"><h2>Eventos</h2></section></main>
+
+<script src="script.js"></script>
+    <script src="tema.js?v=32"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "tcc-senai-backend-json-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Secretaria Virtual SENAI: frontend separado de backend Node.js com JSON Server",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.22.3",
+    "json-server": "^0.17.4"
+  }
+}

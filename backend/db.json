@@ -1,0 +1,13 @@
+{
+  "usuarios": [
+    {
+      "nome": "Senai",
+      "sobrenome": "Mogi",
+      "username": "senai2026",
+      "tipo": "aluno",
+      "salt": "223607ce9a5ea5272b28ec9f2ce87ab9",
+      "senhaHash": "e665b14ee08955c78f5e3e9b4098db2054be9c26be640f39a44c1ce94e4712893e57e9ae7b574d8cf46448ec99947260bb2e050e3e942b4b2de25d72e6b56d89",
+      "id": 1
+    }
+  ]
+}

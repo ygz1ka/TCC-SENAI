@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../tema-global.css?v=32">
+<script>
+    (function(){var t='claro';try{t=localStorage.getItem('tema')==='escuro'?'escuro':'claro'}catch(e){}document.documentElement.dataset.tema=t;document.documentElement.classList.toggle('dark',t==='escuro');})();
+    </script>
+<link rel="stylesheet" href="../icons.css">
+</head>
+<body>
+<button id="tema" class="tema-flutuante" type="button" aria-label="Alternar tema"><img id="icone-tema" src="../imagens/moon.png" alt="Alternar tema"></button>
+    
+    <script src="../tema.js?v=32"></script>
+</body>
+</html>

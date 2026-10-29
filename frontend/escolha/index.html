@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Escolha de acesso</title>
+
+    <link rel="stylesheet" href="styleEscolha.css">
+    <link rel="stylesheet" href="../tema-global.css?v=32">
+<script>
+    (function(){var t='claro';try{t=localStorage.getItem('tema')==='escuro'?'escuro':'claro'}catch(e){}document.documentElement.dataset.tema=t;document.documentElement.classList.toggle('dark',t==='escuro');})();
+    </script>
+<link rel="stylesheet" href="../icons.css">
+</head>
+
+<body>
+
+    <header class="topo-escolha">
+
+        <div class="logo-escolha">
+            Secretaria Virtual SENAI
+        </div>
+
+        <button id="tema">
+           <img id="icone-tema" src="../imagens/moon.png" alt="Trocar tema">
+        </button>
+
+    </header>
+
+    <main class="pagina-escolha">
+
+        <section class="card-escolha">
+
+            <div class="icone-principal">
+                <svg class="icone-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 21v-5h6v5M8 7h2M14 7h2M8 11h2M14 11h2"/></svg>
+            </div>
+
+            <h1>Escolha seu tipo de acesso</h1>
+
+            <p class="subtitulo-escolha">
+                Selecione uma opção para continuar.
+            </p>
+
+            <div class="opcoes-acesso">
+
+                <button
+                    class="opcao-acesso"
+                    data-tipo="aluno"
+                >
+
+                    <div class="icone-acesso">
+                        <svg class="icone-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 10 10-6 10 6-10 6zM6 13v5c3 3 9 3 12 0v-5M22 10v6"/></svg>
+                    </div>
+
+                    <div class="texto-acesso">
+
+                        <h2>Aluno</h2>
+
+                        <p>
+                            Acesse boletim, disciplinas, cursos e mensagens.
+                        </p>
+
+                    </div>
+
+                    <span class="seta-acesso"><svg class="icone-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
+
+                </button>
+
+                <button
+                    class="opcao-acesso"
+                    data-tipo="professor"
+                >
+
+                    <div class="icone-acesso">
+                        <svg class="icone-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+
+                    <div class="texto-acesso">
+
+                        <h2>Professor</h2>
+
+                        <p>
+                            Acesse turmas, notas, alunos e comunicados.
+                        </p>
+
+                    </div>
+
+                    <span class="seta-acesso"><svg class="icone-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    
+      <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+
+    <script src="escolha.js"></script>
+
+    <script src="../tema.js?v=32"></script>
+</body>
+
+</html>
